@@ -1,0 +1,20 @@
+
+#include <iostream>
+
+
+int main()
+{
+ std::cout<<" Barev "<<std::endl;
+float gumar; // es tex kareli a long double dnel Kam inj vor stugum dnel vor menak mer uzac diapazon@ mutq lini
+float mijin_tvabanakan;
+ for (int i=0;i<10;i++) {
+     std::cout<<" Hajort Tiv@ gri : ";
+     int mutqain_tiv;
+ 
+     std::cin>>mutqain_tiv;
+     gumar +=mutqain_tiv;
+     mijin_tvabanakan= gumar/(i+1);
+          
+     }
+ std::cout<<"Mijin tvabanakan : "<<mijin_tvabanakan<<std::endl<<"Isk Tveri Gumarn e : "<<gumar;
+}
