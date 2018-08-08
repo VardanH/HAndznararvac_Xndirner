@@ -1,0 +1,63 @@
+///////////////
+function my_if_prime(t1) { // tru ete parz a hakarak depqum false
+var output=false;
+
+for (var i=2; i<t1;i++){
+output = (t1%i) ? true:false;
+if (output) continue;
+break;
+
+}
+
+    return output;
+}
+/////////////
+function myFactorial(p1) { // veradardznum a tvi factorial@
+var facto=1;
+
+for (var i=1;i<=p1;i++){
+facto = facto*i;
+
+}
+    return facto;
+}
+//////////////
+function my_num_string(n1) { // stacel a number veradardznum a number abc---cab
+var n1_st=n1.toString();
+var last_num=n1_st.substr((n1_st.length)-1,(n1_st.length)-1);
+var first_nums=n1_st.slice(0,(n1_st.length)-1);
+var num_st=last_num.concat(first_nums);
+var st_num=Number(num_st);
+
+    return st_num; 
+
+}
+/////////////////////
+
+
+var a=11;// mutqain tiv@
+function Prime_true(num) {
+
+if ( my_if_prime(num)) {       // tru ete parz a hakarak depqum false
+var del_str=num.toString();  // tiv@ string darav
+var del_len=del_str.length;  // lengt@ vekalecinq  
+var iter_count=(myFactorial(del_len))-1;// hashvecinq lengtov factoryl@ --Aysinqn tarberakneri qanak@ 
+var Out=false;
+
+var fo_r_num=num;
+    for (var i=0;i<=iter_count;i++){
+
+         fo_r_num=my_num_string(fo_r_num); // ABC--cAB
+         Out=my_if_prime(fo_r_num);
+         if (Out) continue;
+         break;
+         }
+
+
+    } else return false;  
+
+ return Out;
+
+
+
+}
