@@ -1,0 +1,14 @@
+function if_unique_chars(str) {
+var res;
+
+for (var i=0;i<str.length;i++){
+
+ res = str.substr(i, 1);;// vercnenq mi hat tar
+//return res;
+if (str.indexOf(res,(i+1))>-1) return false  ;// console.log (return false)// -1  is  tru ))
+  
+}
+
+
+  return  true;// console.log (return true)
+}
