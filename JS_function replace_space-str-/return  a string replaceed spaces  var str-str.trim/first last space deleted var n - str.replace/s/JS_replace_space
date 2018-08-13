@@ -1,7 +1,0 @@
-function replace_space(str) {//return  a string replaceed spaces
-
-var str=str.trim();// first last space deleted
-var n = str.replace(/\s/g, "%20");
-
-    return n;
-}
